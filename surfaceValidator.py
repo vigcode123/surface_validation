@@ -11,7 +11,6 @@ import ast
 # Read configuration from ini file
 config = configparser.ConfigParser()
 config.read("mesh.ini")
-print(type(config["DEFAULT"]["ThreshForProgressBar"]))
 
 # Set the target directory for STL files
 target_dir = Path(config["DEFAULT"]["PathToSTLFiles"])
